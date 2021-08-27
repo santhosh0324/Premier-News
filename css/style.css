@@ -1,0 +1,256 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   line-height: 1.5;
+   font-family: 'Ubuntu', sans-serif;
+   background: #777;
+   
+}
+
+a{
+   color: #333;
+   text-decoration: none;
+}
+
+img{
+   width: 100%;
+}
+
+ul{
+   list-style: none;
+}
+
+h1{
+   color: purple;
+}
+
+/*  ----------------
+   // Navigation //
+   ---------------- */
+   
+.content{
+    padding: 1rem 2rem;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1100px;
+}
+
+#nav{
+   position: sticky;
+   top: 0;
+   background: #fdfd;
+   z-index: 2;
+}
+
+#nav .content{
+   display: grid;
+   grid-template-columns: 6fr 2fr;
+   justify-self: center;
+   align-items: center;
+}
+
+#nav ul{
+   display: flex;
+   justify-self: end;
+}
+
+#nav ul li a{
+   border-radius: 3px;
+   padding: .5rem;
+   margin-right: 1rem;
+}
+
+#nav ul li a.current{
+   background: #777;
+}
+
+#nav ul li a:hover{
+   background-color: rgb(70, 33, 70);
+   color: white;
+}
+
+/* ---------------
+   // showcase //
+  -------------- */
+
+#showcase{
+     color: white;
+     background-color:black;
+     position: relative;
+     padding: 0 2rem;
+}
+
+#showcase::before{
+   content: '';
+   background: url('../img/jpg.jfif') no-repeat center center/cover;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   opacity: 0.6;
+}
+
+#showcase .container{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: center;
+   align-items:center ;
+   height: 50vh;
+}
+
+#showcase .container-content{
+   z-index: 1;
+}
+
+#showcase .container-content p{
+   margin-bottom: 2rem;
+}
+
+.onnu{
+   font-weight: bold;
+   color: rgb(233, 18, 18);
+}
+
+.btn{
+   background:lightcoral;
+   color: black;
+   font-weight: 600;
+   padding: 10px;
+   border: none;
+   border-radius: 3px;
+   text-align: center;
+}
+
+.btn:hover{
+   opacity: 0.85;
+}
+
+.bg-lightgreen{background: #333; color: white;}
+.bg-dark{background: white; color: rgb(121, 94, 94);}
+.bg-light{background: white; color: #333 ;}
+.bg-red{background: #333; color: white;}
+
+.topic, .topic-d{
+   display: inline-block;
+   border-radius: 20px;
+   margin: 0.5rem 0;
+   font-size: small;
+   color: white;
+   padding: 5px;
+   text-transform: uppercase;
+}
+.topic-today{background: coral;}
+.topic-dschool{background: purple;}
+.topic-dcollege{background: red;}
+.topic-dIndvsEng{background: lightseagreen;}
+.topic-dstock{background: darkkhaki;}
+
+/*  -------
+   section
+  -------   */
+
+#highlights .highlights-content{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 1rem;
+   border-radius: 20px;
+   margin-top: 1rem;
+}
+.news{
+   padding: 1rem;
+   border-radius: 20px;
+}
+
+/* -------
+   footer
+  ------ */
+  .copy{
+   padding: 1rem;
+   margin: auto;
+   color: white;
+   background-color: purple;
+   text-align: center;
+} 
+  
+.copy-r{
+   text-align: center;
+   background: purple;
+   padding: 0.5rem;
+   color: white;
+   margin-top: .8rem;
+}
+.copy-content{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   background: darkgray;
+}
+.copy-content .juz{
+   padding: 1rem;
+}
+.social ul{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+.social ul li{
+   padding:  .5rem;
+}
+.abord{
+   border-left: #333 2px solid;
+   padding: .4rem;
+}
+.bord{
+   border-left: #333 2px solid;
+}
+.copy-content .inform input[type='email']{
+   width: 100%;
+   padding:.5rem;
+   margin-bottom: 5px;
+}
+.copy-content .inform textarea{
+   border-radius: 5px;
+}
+.copy-content .inform input:focus{
+   border-color: peru;
+}
+
+.head{
+   margin-bottom: .5rem;
+   font-size: medium;
+   color: #020202;
+}
+/*  -----
+   about 
+  -----*/
+.card-article{
+   background: lightgoldenrodyellow;
+   padding: 1rem;
+}
+.card-aside{
+   background: #f4f4f4;
+   padding: 1rem;
+}
+
+.about-content{
+   display: grid;
+   grid-template-columns: 4fr 2fr;
+   grid-gap: 1rem;
+}
+.about-content > *:first-child{
+   grid-row: 1 /span 6;
+}
+.about-content > *:last-child{
+   grid-row: 2/span 4;
+}
+.card-aside a{ 
+   background: lightsalmon;
+   padding: .5rem;
+   display: block;
+   text-align: center;
+   margin-top: .5rem;
+}
+

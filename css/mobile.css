@@ -1,0 +1,89 @@
+#nav .content{
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+#nav ul{
+    justify-self: center;
+    text-align: center;
+}
+#nav .content h1 {
+    text-align: center;
+    justify-self: center;
+}
+#showcase .container{
+    grid-template-columns: 1fr;
+}
+#showcase .container-content p{
+    margin-bottom: 1rem;
+ }
+#highlights .highlights-content{
+    grid-template-columns: 1fr;
+    margin-top: .5rem;
+}
+#nav ul li a {
+    padding: .25rem;
+}
+.content{
+    padding: .5rem .75rem;
+}
+.bg-lightgreen{background: #333; color: white;}
+.bg-dark{background: #333; color: white}
+.bg-light{background: white; color: #333 ;}
+.bg-red{background: white; color: #333;}
+
+#copy .copy-content{
+    grid-template-columns: 1fr;
+}
+.copy-content .juz {
+    padding: .25rem;
+}
+.copy-content .inform input[type='email']{
+    width: 96.5%;
+}
+.copy-content >*:first-child, .copy-content >*:nth-child(2){
+    border-bottom: #f4f4f4 1px dotted;
+}
+@media (max-width:600px) {
+    h1{
+        font-size: large;
+    }
+    .about-content{
+        grid-template-columns: 1fr;
+    }
+    .about-content > *:first-child{
+        grid-row: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
